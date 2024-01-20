@@ -1,0 +1,9 @@
+<!-- content-card.component.html -->
+<div>
+    <h2>Content List</h2>
+    <p>Total Items: {{ contentList.getCount() }}</p>
+    <div *ngFor="let item of contentList.content; let i = index">
+      <div [innerHTML]="contentList.getContentAtIndex(i)"></div>
+    </div>
+  </div>
+  
