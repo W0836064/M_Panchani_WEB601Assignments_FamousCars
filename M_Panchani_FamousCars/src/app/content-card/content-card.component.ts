@@ -1,6 +1,6 @@
-// content-card.component.ts
+/* // content-card.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ContentList } from '../helper-files/content-list';
+//import { ContentList } from '../helper-files/content-list';
 
 @Component({
   selector: 'app-content-card',
@@ -46,3 +46,4 @@ export class ContentCardComponent implements OnInit {
 
   }
 }
+ */

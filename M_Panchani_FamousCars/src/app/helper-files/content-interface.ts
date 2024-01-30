@@ -1,4 +1,4 @@
-
+/* 
 export interface Content {
     id: number;
     title: string;
@@ -8,4 +8,4 @@ export interface Content {
     type?: string;
     tags?: string[];
   }
-  
+   */
