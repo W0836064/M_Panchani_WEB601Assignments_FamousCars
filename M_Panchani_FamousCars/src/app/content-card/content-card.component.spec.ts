@@ -1,6 +1,6 @@
-/* import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-//import { ContentCardComponent } from './content-card.component';
+import { ContentCardComponent } from './content-card.component';
 
 describe('ContentCardComponent', () => {
   let component: ContentCardComponent;
@@ -21,4 +21,3 @@ describe('ContentCardComponent', () => {
     expect(component).toBeTruthy();
   });
 });
- */

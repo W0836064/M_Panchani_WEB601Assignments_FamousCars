@@ -1,9 +1,9 @@
-<!-- content-card.component.html -->
-<div>
-    <h2>Content List</h2>
-    <p>Total Items: {{ contentList.getCount() }}</p>
-    <div *ngFor="let item of contentList.content; let i = index">
-      <div [innerHTML]="contentList.getContentAtIndex(i)"></div>
-    </div>
-  </div>
-  
+<!-- src/app/content-card/content-card.component.html -->
+<div class="content-card" [ngClass]="{'first-card': content.id === 1}">
+  <div class="card-header">{{ content.title }}</div>
+  <img *ngIf="content.imgURL" [src]="content.imgURL" alt="Content Image" (click)="onImageClick()" />
+  <p *ngIf="content.description">Description: {{ content.description }}</p>
+  <p *ngIf="content.creator">Creator: {{ content.creator }}</p>
+  <p *ngIf="content.type">Type: {{ content.type }}</p>
+  <p *ngIf="content.tags && content.tags.length > 0">Tags: {{ content.tags.join(', ') }}</p>
+</div>
