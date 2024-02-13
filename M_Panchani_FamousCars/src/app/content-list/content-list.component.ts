@@ -12,7 +12,7 @@ export class ContentListComponent implements OnInit {
     {
       id: 1,
       title: 'Classic Cars Collection',
-      imgURL: 'assets/Img/Img1.jpg',
+     
       description: 'Explore a stunning collection of classic cars from different eras.',
       creator: 'Vintage Car Enthusiasts',
       type: 'Classic',
