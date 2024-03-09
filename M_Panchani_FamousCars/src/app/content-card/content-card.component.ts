@@ -5,11 +5,13 @@ import { Content } from '../helper-files/content-interface';
 @Component({
   selector: 'app-content-card',
   templateUrl: './content-card.component.html',
-  styleUrls: ['./content-card.component.scss']
+  styleUrls: ['./content-card.component.scss'],
+  
 })
 export class ContentCardComponent {
   @Input() content!: Content;
   @Output() imageClick: EventEmitter<string> = new EventEmitter();
+  @Input() boxShadow: boolean = false;
 
   constructor() {}
   onImageClick() {
