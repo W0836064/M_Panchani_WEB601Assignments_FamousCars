@@ -11,8 +11,7 @@ import { Content } from '../helper-files/content-interface';
 export class ContentCardComponent {
   @Input() content!: Content;
   @Output() imageClick: EventEmitter<string> = new EventEmitter();
-  @Input() boxShadow: boolean = false;
-
+  @Input() boxShadow: boolean = false; // Declare boxShadow input property
   constructor() {}
   onImageClick() {
     // Add your logic here

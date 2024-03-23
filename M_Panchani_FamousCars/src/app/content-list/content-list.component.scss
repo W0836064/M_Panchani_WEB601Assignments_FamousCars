@@ -24,3 +24,17 @@
   .not-found {
     color: red;
   }
+
+  :host {
+    display: block;
+    // Other styles...
+  
+    // Use the boxShadow input to conditionally apply box-shadow
+    box-shadow: var(--box-shadow-default, none);
+  }
+  
+  :host([boxShadow]) {
+    // Apply box-shadow when the boxShadow input is true
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

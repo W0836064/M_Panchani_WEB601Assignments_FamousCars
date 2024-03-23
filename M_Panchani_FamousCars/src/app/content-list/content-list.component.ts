@@ -1,3 +1,4 @@
+// content-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 import { ContentService } from '../content.service';

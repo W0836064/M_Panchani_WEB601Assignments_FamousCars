@@ -31,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     });
   }
-  
+
   ngOnDestroy(): void {
     if (this.messagesSubscription) {
       this.messagesSubscription.unsubscribe();
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this.messagesService.addMessage('Error occurred: Invalid ID');
       return;
     }
-    
+
     this.contentService.getContentById(this.contentId).subscribe(contentItem => {
       if (contentItem) {
         this.singleContentItem = contentItem;
